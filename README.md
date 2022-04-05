@@ -1,10 +1,8 @@
  <div id="top"></div>
-<!-- PROJECT LOGO -->
+
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+  
 
   <h3 align="center">Readme - Proyecto Django</h3>
 
@@ -17,12 +15,12 @@
 
 
 
-<!-- TABLE OF CONTENTS -->
+<!-- Tabla de contenido -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Tabla de contenidos:</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project">Sobre el Projecto</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -65,20 +63,14 @@ Use the `BLANK_README.md` to get started.
 
 
 
-### Built With
+### Hecho Con:
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Python](https://python.org/)
+* [Django](https://djangoproject.com/)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+
+<p align="right">(<a href="#top">Volver arriba</a>)</p>
 
 
 
