@@ -1,0 +1,31 @@
+{% extends './../masterPage.html' %}
+{% block contenido %}
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/style3.css' %}">
+
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Stock</th>
+        <th>Nombre Producto</th>
+        <th>Deporte</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for item in productos %}
+        <option value="{{item.id}}">{{item.detalle_deporte}}</option>
+        <tr>
+            <td data-column="">{{item.id}}</td>
+            <td data-column="">{{item.stock}}</td>
+            <td data-column="">{{item.nombre_producto}}</td>
+            <td data-column="">{{item.tipo_deporte.detalle_deporte}}</td>
+        </tr>
+        {% endfor %}
+      
+    </tbody>
+  </table>
+
+{% endblock  %} 

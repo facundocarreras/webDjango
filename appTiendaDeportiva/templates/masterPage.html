@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <header class="site-header">
+        <div class="site-identity">
+          <h1><a href="#">Caju Indumentaria</a></h1>
+        </div>  
+        <nav class="site-navigation">
+          <ul class="nav">
+            
+            <li><a href="/tienda/tipoIndumentaria/">Indumentarias</a></li> 
+            <li><a href="/tienda/tipoDeporte/">Deportes</a></li> 
+            <li><a href="/tienda/gestionProducto/">Productos</a></li>
+            <li><a href="/tienda/buscarProducto/">Busqueda</a></li>
+
+          </ul>
+        </nav>
+      </header>
+
+      {% block contenido %}{% endblock  %}
+
+</body>
+</html>

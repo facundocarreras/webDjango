@@ -1,0 +1,32 @@
+{% extends './../masterPage.html' %}
+{% block contenido %}
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/style2.css' %}">
+
+<form action = '/tienda/confirmarBusqueda/' method = 'GET'> 
+  {% csrf_token %}  
+
+<div class="select">
+  <select name = 'select_deporte[]'>
+    <option value="0">Seleccione Deporte</option>
+    {% for item in tiposDeporte %}
+    <option value="{{item.id}}">{{item.detalle_deporte}}</option>
+    {% endfor %}
+  </select>
+  </div>
+  <div class="select">
+    <select name = 'select_indumentaria[]'>
+      <option value="0">Seleccione tipo de indumentaria</option>
+      {% for item in tiposIndumentaria %}
+      <option value="{{item.id}}">{{item.detalle_indumentaria}}</option>
+      {% endfor %}
+    </select>
+    </div>
+
+    <input type = 'submit' value = 'Guardar' /> 
+</form>
+
+
+  {% endblock  %} 

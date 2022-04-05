@@ -1,0 +1,23 @@
+{% extends './../masterPage.html' %}
+{% block contenido %}
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/style1.css' %}">
+
+
+<form action = '/tienda/registrarDeporte/' method = 'POST'> 
+{% csrf_token %}  
+
+
+    <label> Tipo de Deporte: </label> <br>
+    <input type="text" placeholder="" name = 'nombre_deporte' /> <br>
+
+  <br>
+  
+  <input type = 'submit' value = 'Guardar' /> 
+
+  </form>
+{% endblock  %} 
+
+{% comment %} #nombre_producto, tipo_deporte , tipo_indumentaria, stock {% endcomment %}

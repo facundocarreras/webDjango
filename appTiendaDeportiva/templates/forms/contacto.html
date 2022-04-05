@@ -1,0 +1,21 @@
+{% extends './../masterPage.html' %}
+{% block contenido %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style1.css' %}">
+
+
+<form>
+    <label> Nombre: </label> <br>
+    <input type="text" placeholder="" /> <br>
+    <label> Apellido: </label> </br>
+    <input type="text" placeholder="" /><br>
+    <label> Email: </label> </br>
+    <input type="text" placeholder="" />
+  <br>
+  <button> Enviar </button>
+  </form>
+
+
+{% endblock  %}
+
