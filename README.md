@@ -28,7 +28,7 @@
     <li>
       <a href="#function">Funcionalidades:</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#Utilization">Utilizacion</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -48,7 +48,9 @@
 
 
 
-Proyecto creado para el desafio n°6 para el curso de Desarrollador Web Python utilizando Django.
+Proyecto creado para el desafio n°6 para el curso de Desarrollador Web Python utilizando Django. 
+<br>En el mismo tenemos la carga y busqueda de productos de un futuro e-commer de indumentaria deportiva dentro de la base de datos.
+<br>Como herencia en los templates se utilizo un header en comun para todos los templates.
 
 
 
@@ -71,13 +73,13 @@ Proyecto creado para el desafio n°6 para el curso de Desarrollador Web Python u
 
 Rutas de Funcionalidades : 
 
-* npm
+* Rutas:
   ```sh
   webDjango\appTiendaDeportiva\views.py || webDjango\appTiendaDeportiva\views.py
 
   ```
 
-### Prerequisites
+### Utilizacion
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
