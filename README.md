@@ -42,7 +42,7 @@
 
 
 Proyecto creado para el desafio n°6 para el curso de Desarrollador Web Python utilizando Django. 
-<br>En el mismo tenemos la carga y busqueda de productos de un futuro e-commer de indumentaria deportiva dentro de la base de datos.
+<br>En el mismo tenemos la carga y busqueda de productos de un futuro e-commerce de indumentaria deportiva dentro de la base de datos.
 <br>Como herencia en los templates se utilizo un header en comun para todos los templates.
 
 
