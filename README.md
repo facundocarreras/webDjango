@@ -22,11 +22,11 @@
     <li>
       <a href="#about-the-project">Sobre el Projecto</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Hecho con</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#function">Funcionalidades:</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
@@ -43,23 +43,15 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
+
 ## Sobre el proyecto
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+Proyecto creado para el desafio n°6 para el curso de Desarrollador Web Python utilizando Django.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
 
-Use the `BLANK_README.md` to get started.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
@@ -70,15 +62,20 @@ Use the `BLANK_README.md` to get started.
 * [Django](https://djangoproject.com/)
 
 
-<p align="right">(<a href="#top">Volver arriba</a>)</p>
 
 
 
-<!-- GETTING STARTED -->
-## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+
+## Funcionalidades
+
+Rutas de Funcionalidades : 
+
+* npm
+  ```sh
+  webDjango\appTiendaDeportiva\views.py || webDjango\appTiendaDeportiva\views.py
+
+  ```
 
 ### Prerequisites
 
