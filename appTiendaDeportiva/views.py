@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import TipoDeporte, TipoIndumentaria, Producto
+from .models import TipoDeporte, TipoIndumentaria, Producto , Familia
 
 def mostrarMaster(request):
 
@@ -58,3 +58,22 @@ def confirmarBusqueda(request):
 
     productosFiltrados = Producto.objects.filter(tipo_deporte__pk = int(tiposDeporte)).filter(tipo_indumentaria__pk = int(tiposIndumentaria))
     return render(request, 'forms/resultadoBusqueda.html',  {'productos': productosFiltrados})
+
+def vista_familiares(request):
+    return render(request, 'forms/familiares.html')
+
+def registrar_familiar(request):
+    nombre_familiar = request.POST['nombre_familiar']
+    edad_familiar = int(request.POST['edad_familiar'])
+    fecha_nacimiento = request.POST['fecha_nacimiento']
+    
+    familiar_create = Familia(nombre_familiar = nombre_familiar, edad_familiar = edad_familiar, fecha_nacimiento = fecha_nacimiento)
+    familiar_create.save()
+    familiaresX = Familia.objects.all()
+    return render(request, 'forms/busquedaFamiliares.html',  {'familiares': familiaresX})
+
+def mostrar_familiar(request):
+    
+    familiares = Familia.objects.all()
+    return render(request, 'forms/busquedaFamiliares.html',  {'familiares': familiares})
+

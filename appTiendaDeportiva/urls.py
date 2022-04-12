@@ -15,5 +15,11 @@ urlpatterns = [
     path('registrarDeporte/', views.registrarTipoDeporte, name = 'registrarDeporte'),
     path('registrarIndumentaria/', views.registrarIndumentaria, name = 'registrarIndumentaria'),
     path('registrarProductos/', views.registrarProducto),
+
+    #Proyecto Familiares
+    path('vistaFamiliares/', views.vista_familiares),
+    path('registrarFamiliar/', views.registrar_familiar),
+    path('mostrarFamilia/', views.mostrar_familiar),
+    
     
 ]

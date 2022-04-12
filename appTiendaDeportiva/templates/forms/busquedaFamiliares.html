@@ -1,0 +1,31 @@
+{% extends './../masterPage.html' %}
+{% block contenido %}
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/style3.css' %}">
+
+<table>
+    <thead>
+      <tr>
+        <th>Nombre Familiar</th>
+        <th>Edad Familiar</th>
+        <th>Fecha de nacimiento</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+        {% for item in familiares %}
+        {% comment %} <option value="{{item.id}}">{{item.detalle_deporte}}</option>
+        <tr> {% endcomment %}
+            <td data-column="">{{item.nombre_familiar}}</td>
+            <td data-column="">{{item.edad_familiar}}</td>
+            <td data-column="">{{item.fecha_nacimiento}}</td>
+
+        </tr>
+        {% endfor %}
+      
+    </tbody>
+  </table>
+
+{% endblock  %} 

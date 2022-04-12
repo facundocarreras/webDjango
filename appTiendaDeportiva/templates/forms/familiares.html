@@ -1,0 +1,20 @@
+{% extends './../masterPage.html' %}
+{% block contenido %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style1.css' %}">
+
+
+<form action = '/tienda/registrarFamiliar/' method = 'POST'> 
+  {% csrf_token %}  
+    <label> Nombre Familiar: </label> <br>
+    <input type="text" placeholder="Ingrese nombre del familiar" name = 'nombre_familiar' /> <br> 
+    <label> Edad Familiar: </label> <br>
+    <input type="number" placeholder="Ingrese edad del familiar" name = 'edad_familiar' /> <br>
+    <label> Fecha de nacimiento: </label> <br>
+    <input type="date" placeholder="Ingrese nombre del producto" name = 'fecha_nacimiento' /> <br>
+
+  <br>
+  <button> Guardar </button>
+  </form>
+
+  {% endblock  %} 

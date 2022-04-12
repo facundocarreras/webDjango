@@ -12,4 +12,7 @@ class Producto(models.Model):
     tipo_indumentaria = models.ForeignKey(TipoIndumentaria, on_delete=models.CASCADE)
     stock = models.IntegerField(max_length = 11)
 
-
+class Familia(models.Model):
+    nombre_familiar = models.CharField(max_length = 200)
+    edad_familiar = models.IntegerField(max_length = 10)
+    fecha_nacimiento = models.DateField()
